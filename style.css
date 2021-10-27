@@ -92,21 +92,29 @@ header nav ul li a:hover {
 form {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content:baseline;
   border: 2px solid #ff385c;
   padding: 10px;
 }
 
 form label {
   font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content:left;
+}
+
+form div {
+  display: flex;
+  justify-content: space-between;
 }
 
 form select,
 form input {
+  width: 180px;
   margin-bottom: 20px;
-  width: 65%;
-  float: right;
 }
+
 
 form button {
   background-color: #ff385c;
@@ -131,7 +139,7 @@ footer p {
 
 /* -------  Media Query ------- */
 
-@media all and (min-width: 600px) {
+@media all and (min-width: 480px) {
   header {
     background-color: #ff385c;
     display: flex;
